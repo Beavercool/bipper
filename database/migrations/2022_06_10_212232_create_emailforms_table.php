@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('emailform', function (Blueprint $table) {
+        Schema::create('emailforms', function (Blueprint $table) {
             $table->id();
-            $table->string('email');
+            $table->string('email1');
             $table->timestamps();
         });
     }

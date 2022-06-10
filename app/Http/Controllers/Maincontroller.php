@@ -56,15 +56,15 @@ return view('review', ['reviews' => $reviews->all()]);
      return view('pricing');
     }
 
-    public function contactform(Request $request) {
-      $validem = $request ->validate([
+    public function contactform(Request $emailforce) {
+      $validem = $emailforce ->validate([
           'email1' => 'required|min:4|max:30']);
           
 
       $emailform = new emailform();
-      $emailform->email1 = $request->input('email1');
+      $emailform->email1 = $emailforce->input('email1');
       
       $emailform->save();
       return back()->withInput();
     }
-}
+    }
