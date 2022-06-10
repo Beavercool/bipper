@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\emailform;
 use Dflydev\DotAccessData\Data;
 use Illuminate\Http\Request;
 use PharIo\Manifest\Email;
@@ -57,7 +58,13 @@ return view('review', ['reviews' => $reviews->all()]);
 
     public function contactform(Request $emailform) {
       $validem = $emailform ->validate([
-          'email1' => 'required|min:4|max:20']);
-          return back()->withInput(); }
+          'email1' => 'required|min:4|max:30']);
+          
 
+      $emailform = new emailform();
+      $emailform->email1 = $emailform->input('email1');
+      
+      $emailform->save();
+      return back()->withInput();
+    }
 }
