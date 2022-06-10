@@ -57,6 +57,7 @@ return view('review', ['reviews' => $reviews->all()]);
 
     public function contactform(Request $emailform) {
       $validem = $emailform ->validate([
-          'email1' => 'required|min:4|max:20']); }
+          'email1' => 'required|min:4|max:20']);
+          return back()->withInput(); }
 
 }
