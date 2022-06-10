@@ -59,6 +59,17 @@
       </div>
 
       <div class="col-md-5 offset-md-1 mb-3">
+
+      @if($errors->any())
+      <div class= "alert alert-danger">
+        <ul>
+          @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+          
+            @endforeach
+        </ul>
+      </div>
+      @endif
         <form method="post" action=/contactform>
         @csrf
           <h5>Subscribe to our newsletter</h5>

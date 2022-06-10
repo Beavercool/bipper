@@ -8,7 +8,7 @@ Route::get('/review', [MainController::class, 'review']);
 Route::post('/review/check', [MainController::class, 'review_check']);
 Route::get('/contacts', [MainController::class, 'contacts']);
 Route::get('/pricing', [MainController::class, 'pricing']);
-Route::post('/', [MainController::class, 'contactform']);
+Route::post('/contactform', [MainController::class, 'contactform']);
 //Route::get('/user/{id}/{name}', function ($id, $name) {
  //   return 'ID: '.$id.'. Name: '.$name;
 //});
