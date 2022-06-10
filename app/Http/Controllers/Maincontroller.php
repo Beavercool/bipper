@@ -44,4 +44,14 @@ return view('review', ['reviews' => $reviews->all()]);
 
       return redirect('/review');
   }
+
+  public function contacts() 
+    {
+     return view('contacts');
+    }
+
+    public function pricing() 
+    {
+     return view('pricing');
+    }
 }
