@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
+use Dflydev\DotAccessData\Data;
 use Illuminate\Http\Request;
+use PharIo\Manifest\Email;
+
+use function GuzzleHttp\Promise\all;
 
 class MainController extends Controller
 {
@@ -18,7 +23,8 @@ class MainController extends Controller
   
   public function review() 
   {
-      return view('review');
+    $reviews = new Contact();
+return view('review', ['reviews' => $reviews->all()]);
   }
   
   public function review_check(Request $request) 
@@ -28,5 +34,14 @@ class MainController extends Controller
         'subject' => 'required|min:4|max:100',
         'message' => 'required|min:10|max:500',
       ]);
+
+      $review = new Contact();
+      $review->email = $request->input('email');
+      $review->subject = $request->input('subject');
+      $review->message = $request->input('message');
+
+      $review->save();
+
+      return redirect('/review');
   }
 }
