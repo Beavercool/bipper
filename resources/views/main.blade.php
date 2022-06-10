@@ -74,6 +74,7 @@
       <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
       <a class="btn btn-outline-secondary" href="#">Coming soon</a>
     </div>
+    
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
