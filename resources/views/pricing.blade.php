@@ -3,6 +3,7 @@
 @section('title')Pricing @endsection
 
 @section('main_content')
+
 <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -57,11 +58,12 @@
     </style>
 
 <link href="pricing.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Pricing</h1>
       <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div>
-  </header>
 
   <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
