@@ -16,3 +16,5 @@ Route::post('/contactform', [MainController::class, 'contactform']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get("/zip-form",[ZipController::class,"zipUploadForm"]);
+Route::post("/extract-zip",[ZipController::class,"extractUploadedZip"]);
