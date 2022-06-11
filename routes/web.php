@@ -13,6 +13,6 @@ Route::post('/contactform', [MainController::class, 'contactform']);
 //Route::get('/user/{id}/{name}', function ($id, $name) {
  //   return 'ID: '.$id.'. Name: '.$name;
 //});
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
