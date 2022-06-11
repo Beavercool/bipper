@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body class="text">
@@ -54,7 +56,7 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="../../to_do_list/index.php" class="nav-link p-0 text-muted">About</a></li>
+          <li class="nav-item mb-2"><a href="/to_do_list/index.php" class="nav-link p-0 text-muted">About</a></li>
         </ul>
       </div>
 
