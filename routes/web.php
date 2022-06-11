@@ -16,13 +16,3 @@ Route::post('/contactform', [MainController::class, 'contactform']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::get('/items', [ItemController::class, 'index']);
-Route::prefix('/item')->group(function(){
-    Route::post('/store',[ItemController::class, 'store']);
-    Route::put('/update' , [ItemController::class, 'update']);
-    Route::delete('/destroy', [ItemController::class, 'destroy']);
-});
