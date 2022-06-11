@@ -27,7 +27,7 @@ class ZipController extends Controller
             }
             $zip->extractTo($storageDestinationPath);
             $zip->close();
-            return back()
+            return redirect('/extract-zip')
              ->with('success','You have successfully extracted zip.');
         }
     }

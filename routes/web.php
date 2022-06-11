@@ -3,6 +3,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ZipController;
+
 Route::get('/', [MainController::class, 'home']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/review', [MainController::class, 'review']);
@@ -17,4 +19,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get("/zip-form",[ZipController::class,"zipUploadForm"]);
-Route::post("/extract-zip",[ZipController::class,"extractUploadedZip"]);
+Route::get("/extract-zip",[ZipController::class,"extractUploadedZip"]);
