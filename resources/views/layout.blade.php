@@ -8,6 +8,14 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <style type="text/css">
+        p.blocktext {
+              margin-left: auto;
+              margin-right: auto;
+              width: 30em
+              }
+    </style> 
 </head>
 <body class="text">
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-3 bg-dark text-white border-bottom">
@@ -26,30 +34,31 @@
     </div>
     @yield('main_content')
     <footer class="py-5">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+      <!-- это короче низ,не трож этот див если не придумал как сделать отступ -->
+     <div class="row">
+      <<div class="col-6 col-md-2 mb-3">
+      <li class="nav-item mb-2"><h5><a href="#" class="nav-link p-0 text-muted">UP</a></h5></li>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Todo</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"></a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"></a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"></a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"></a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted"></a></li>
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-2 mb-3">
+        <h5></h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">API</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">To-Do</a></li>
         </ul>
       </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3">
+      <!--<div class="col-6 col-md-2 mb-3">
         <h5>Section</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -58,7 +67,7 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
           <li class="nav-item mb-2"><a href="/to_do_list/index.php" class="nav-link p-0 text-muted">About</a></li>
         </ul>
-      </div>
+      </div>-->
 
       <div class="col-md-5 offset-md-1 mb-3">
 
@@ -85,8 +94,8 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>© 2022 Company, Inc. All rights reserved.</p>
+    <div class=" ">
+      <p class="blocktext">© 2022 Company, Inc. All rights reserved.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
         <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
