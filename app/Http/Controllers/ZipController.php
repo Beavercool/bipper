@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use ZipArchive;
 class ZipController extends Controller
@@ -22,8 +22,8 @@ class ZipController extends Controller
         else{
             $storageDestinationPath= storage_path("app/uploads/unzip/");
        
-            if (!\File::exists( $storageDestinationPath)) {
-                \File::makeDirectory($storageDestinationPath, 0755, true);
+            if (!Storage::exists( $storageDestinationPath)) {
+                 Storage::makeDirectory($storageDestinationPath, 0755, true);
             }
             $zip->extractTo($storageDestinationPath);
             $zip->close();
