@@ -29,7 +29,7 @@
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
         <a class="btn me-3 py-2 text-white text-decoration-none" style=" margin-top: 10px;" href="/main">Features</a>
         <a class="btn me-3 py-2 text-white text-decoration-none" style= " margin-top: 10px;" href="/about">About</a>
-        <a class="btn me-3 py-2 text-white text-decoration-none"style=" margin-top: 10px;" href="/constructor">Constructor</a>
+        <a class="btn me-3 py-2 text-white text-decoration-none"style=" margin-top: 10px;" href="/zip-form">Burlachivator</a>
         <a class="btn py-2 text-white text-decoration-none" style=" margin-top: 10px;" href="/pricing">Pricing</a>
       </nav>
         <a class="btn btn-warning" style="margin-left:10px; margin-top: 10px;" href="/review">Review</a>
