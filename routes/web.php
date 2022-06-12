@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get("/zip-form",[ZipController::class,"zipUploadForm"]);
-Route::get("/extract-zip",[ZipController::class,"extractUploadedZip"]);
+Route::post("/extract-zip",[ZipController::class,"extractUploadedZip"]);
+Route::get('files/{file}', [ZipController::class,"download"])->name('download');

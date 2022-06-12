@@ -18,7 +18,7 @@
                 @if ($message = Session::get('success'))
                 <div class="alert alert-success alert-block">
                     <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>{{ $message }}</strong>
+                    <strong></strong>
                 </div>
 
                 @endif
@@ -44,6 +44,15 @@
                     </div>
                 </form>
                 
+
+                @if ($message)
+                <ul>
+                    @foreach($message as $ms)
+                        <li><a href="{{route('download',$ms)}}">{{$ms}}</a></li>
+                    @endforeach
+                </ul>
+                @endif
+
             </div>
         </div>
     </div>
