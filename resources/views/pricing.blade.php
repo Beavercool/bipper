@@ -57,12 +57,11 @@
       }
     </style>
 
-<link href="pricing.css" rel="stylesheet">
+    <link href="pricing.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
-<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Pricing</h1>
-      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div>
 
   <main>
@@ -119,7 +118,7 @@
         </div>
       </div>
     </div>
-
+    <!--
     <h2 class="display-6 text-center mb-4">Compare plans</h2>
 
     <div class="table-responsive">
@@ -175,6 +174,7 @@
         </tbody>
       </table>
     </div>
+    -->
   </main>
 @endsection
 
