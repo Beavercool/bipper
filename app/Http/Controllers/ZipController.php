@@ -20,7 +20,7 @@ class ZipController extends Controller
          throw new \Exception($status);
         }
         else{
-            $storageDestinationPath= storage_path("app/uploads/unzip/");
+            $storageDestinationPath= storage_path("/public/unzip");
        
             if (!Storage::exists( $storageDestinationPath)) {
                  Storage::makeDirectory($storageDestinationPath, 0755, true);
