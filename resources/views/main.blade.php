@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
   
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/dusk/64/undefined/bot--v1.png">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/dusk/64/undefined/bot--v1.png"> <!-- это иконка котора должа отображаться в вкладке,но она не работает --> 
     <link rel="manifest" href="/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> --хуй знает куда ведёт-- --> 
@@ -66,7 +66,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+    <!-- <link href="product.css" rel="stylesheet"> -- такого файла нет -->
   </head>
   <body>
     
@@ -83,33 +83,36 @@
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="col-sm bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Bot for Telegram</h2>
         <p class="lead"> </p>
       </div>
-      <div class="bg-light shadow-sm mx-auto text-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">><img style="width: 80%; height: 250px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/ios-filled/250/undefined/telegram-app.png"></div>
+      <div class="bg-light shadow-sm mx-auto text-center" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;">><img style="margin-top: 10px; margin-right: 10px; width: 80%; height: 250px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/ios-filled/250/undefined/telegram-app.png"></div>
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+    <div class="col-sm bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">Bot for Discord</h2>
         <p class="lead"> </p>
       </div>
-      <div class="bg-light shadow-sm mx-auto text-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/carbon-copy/200/undefined/discord-new-logo.png"></div>
+      <div class="bg-light shadow-sm mx-auto text-center" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/carbon-copy/200/undefined/discord-new-logo.png"></div>
     </div>
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+    <div class="col-sm bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">Bot for Viber</h2>
         <p class="lead"> </p>
       </div>
-      <div class="bg-light shadow-sm mx-auto text-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 280px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/ios-filled/250/undefined/viber--v1.png"></div>
+      <div class="bg-light shadow-sm mx-auto text-center" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 280px; border-radius: 21px 21px 0 0;" src="https://img.icons8.com/ios-filled/250/undefined/viber--v1.png"></div>
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+    <div class="col-sm bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Bot for WhatsApp</h2>
         <p class="lead"> </p>
       </div>
-      <div class="bg-light shadow-sm mx-auto text-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 300px; border-radius: 21px 21px" src="https://img.icons8.com/wired/256/undefined/whatsapp.png"></div>
+      <div class="bg-light shadow-sm mx-auto text-center" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"><img style="width: 80%; height: 300px; border-radius: 21px 21px" src="https://img.icons8.com/wired/256/undefined/whatsapp.png"></div>
     </div>
   </div>
 
@@ -119,4 +122,4 @@
   </body>
 </html>
 
-    @endsection
+@endsection

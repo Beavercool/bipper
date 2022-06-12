@@ -1,8 +1,17 @@
+@section('title')
+    BURLACHIVATOR</title>
+    <link rel="icon" type="image/x-icon" href="/burlach.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+@endsection
+
+@extends('layout')
+
+@section('main_content')
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>How to Extract/Unzip a Zip File in Laravel- readerstacks.com</title>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
@@ -11,7 +20,7 @@
 
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h2>How to Extract/Unzip a Zip File in Laravel -readerstacks.com</h2>
+                <h2>Oh,damn it! This is BURLACHIVATOR</h2>
             </div>
             <div class="panel-body">
 
@@ -38,7 +47,7 @@
 
 
                         <div class="col-md-6">
-                            <button type="submit" class="btn btn-success">Upload</button>
+                            <button type="submit" class="btn btn-success btn-block">Upload</button>
                         </div>
 
                     </div>
@@ -59,3 +68,4 @@
 </body>
 
 </html>
+@endsection
